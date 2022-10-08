@@ -32,4 +32,4 @@ async function textChangeAnimation(element, time1, time2, words){
     }
 }
 
-textChangeAnimation(".text", 120, 1800, ["Developer", "Student", "Gamer", "Designer"]);
+textChangeAnimation(".text", 120, 1800, ["Student", "Developer", "Designer"]);

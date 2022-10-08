@@ -76,7 +76,7 @@ body {
    align-items: center;
    justify-content: center;
    gap: 50px;
-   padding-bottom: 16%;
+   padding-bottom: 18%;
 }
 .center a {
     font-family: 'Roboto', sans-serif;
@@ -104,14 +104,41 @@ body {
     color: #464646;
 }
 .scrollDownButton {
+    cursor: crosshair;
+    overflow: hidden;
+    background-color: #464646;
     height: 50px;
     width: 180px;
-    border: solid 0;
-    border-radius: 0;
     position: absolute;
     bottom: 70px;
     left: calc(50% - 90px);
     font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.scrollDownButton .text {
+    z-index: 4;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #262626;
+    transition: 1s;
+}
+.scrollDownButton .hover {
+    position: absolute;
+    height: calc(100% + 100px);
+    left: -25px;
+    transform: rotate(20deg);
+    width: 15px;
+    background-color: #262626;
+    transition: 1s;
+}
+.scrollDownButton:hover > .hover {
+    width: 250px;
+}
+.scrollDownButton:hover > .text {
+    color: #ffffff;
 }
 .mountains {
     width: 100%;
