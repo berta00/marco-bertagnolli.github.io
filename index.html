@@ -10,30 +10,35 @@
         <div class="homePage">
             <div class="header">
                 <div class="headerLeft">
-                    <img class="logoGithub" src="media/githubLogo.svg">
-                    <img class="logoInstagram" src="media/instaLogo.svg">
-                    <img class="logoLinkedin" src="media/linkedinLogo.svg">
+                    <img class="logoGithub" src="media/githubLogo.svg" onclick="window.open('https://github.com/s3rgi0s')">
+                    <img class="logoInstagram" src="media/instaLogo.svg" onclick="window.open('https://www.instagram.com/marcobertagnolli/')">
+                    <img class="logoLinkedin" src="media/linkedinLogo.svg" onclick="window.open('https://www.linkedin.com/in/marco-bertagnolli-595147212')">
                 </div>
                 <div class="headerRight">
                     <div class="menuAboutDiv">
-                        <a>/About</a>
+                        <a href="#about">/About</a>
                     </div>
                     <div class="menuProjectDiv">
-                        <a>/Project</a>
+                        <a href="#project">/Project</a>
                     </div>
                     <div class="menuContactsDiv">
-                        <a>/Contacts</a>
+                        <a href="#contacts">/Contacts</a>
                     </div>
                 </div>
             </div>
             <div class="center">
+                <a class="nomeHomePage">Marco Bertagnolli</a>
+                <div class="occupationDivHomePage">
+                    <a class="text"></a>
+                    <a class="bar">|</a>
+                </div>
             </div>
         </div>
         <img class="mountains" src="media/mountains.svg"></img>
         <button class="scrollDownButton" href="#contentPage">
             Discover now!
         </button>
-        <div class="contentPage">
+        <div class="contentPage" id="contentPage">
             
         </div>
         <script src="script/script.js"></script>

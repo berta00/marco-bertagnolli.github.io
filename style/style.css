@@ -2,6 +2,13 @@
     padding: 0;
     margin: 0;
 }
+*::selection {
+    padding: 0;
+    margin: 0;
+}
+body {
+    scroll-behavior: smooth;
+}
 .homePage {
     background-color: #151515;
     height: 100vh;
@@ -32,13 +39,16 @@
 .logoGithub {
     height: 42px;
     margin-right: 18px;
+    cursor: crosshair;
 }
 .logoInstagram {
     height: 35px;
     margin-right: 34px;
+    cursor: crosshair;
 }
 .logoLinkedin {
     height: 35px;
+    cursor: crosshair;
 }
 .headerRight {
     height: 80px;
@@ -53,14 +63,45 @@
 .headerRight div a {
     color: white;
     font-family: 'Roboto', sans-serif;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 500;
+    text-decoration: none;
+    cursor: crosshair;
 }
 .center {
    height: calc(100vh - 80px);
    width: 100%;
    display: flex;
-   
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 50px;
+   padding-bottom: 16%;
+}
+.center a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+.nomeHomePage {
+    font-size: 70px;
+    color: white;
+}
+.occupationDivHomePage {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+}
+.occupationDivHomePage .text {
+    font-size: 65px;
+    color: #464646;
+}
+.occupationDivHomePage .bar {
+    font-size: 65px;
+    color: #464646;
+}
+.text2 {
+    font-size: 65px;
+    color: #464646;
 }
 .scrollDownButton {
     height: 50px;
@@ -85,4 +126,17 @@
     position: absolute;
     top: 100vh;
     left: 0;
+}
+
+/* ANIMATIONS */
+@keyframes barBlink {
+    30% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 1;
+    }
 }
